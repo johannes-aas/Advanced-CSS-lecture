@@ -1,0 +1,42 @@
+
+$background__primary: #eaeaea;
+$background__primary--dm: #303030;
+
+$text__primary: black;
+$text__primary--dm: rgb(200, 200, 200);
+
+
+@mixin text-color {
+    color: $text__primary;
+    body.dark & {
+        color: $text__primary--dm;
+    }
+}
+
+@mixin bg-color {
+    background-color: $background__primary;
+    body.dark & {
+        background-color: $background__primary--dm;
+    }
+}
+
+@mixin border-color {
+    border-color: rgb(190, 190, 190);
+    body.dark & {
+        border-color: rgb(80, 80, 80);
+    }
+}
+
+@mixin stroke-color {
+    stroke: black;
+    body.dark & {
+        stroke: white;
+    }
+}
+
+@mixin fill-color {
+    fill: black;
+    body.dark & {
+        fill: white;
+    }
+}
